@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <h2 style="margin-bottom: 40px">Add transaction</h2>
+            <!-- <span class="close">&times;</span> -->
+            <div>
+                <div class="modal-top">
+                    <div class="modal-wallet modal-top-item">
+                        <span>Choose wallet</span>
+                        <div>
+                            <img src="./images/wallet.png" alt="wallet" id="wallet-modal-img" class="modal-img" />
+                            <p class="text-modal-check">Wallet 1</p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="category-wallet modal-top-item">
+                        <span>Category</span>
+                        <div>
+                            <img src="./images/wallet.png" alt="category" id="category-modal-img" class="modal-img" />
+                            <p class="text-modal-check">Category</p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="modal-top-item amount-modal">
+                        <span>Amount</span>
+                        <div><input type="text" placeholder="0" /></div>
+                    </div>
+                </div>
+                <div class="modal-bottom">
+                    <div class="modal-top-item-1 modal-bottom-item-date">
+                        <span>Date</span>
+                        <div><input type="date" /></div>
+                    </div>
+                    <div class="modal-top-item-1 modal-bottom-item-input amount-modal">
+                        <span>Note</span>
+                        <div><input type="text" placeholder="Note" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-button">
+                <div>
+                    <button class="cbutton close">Cancle</button>
+                </div>
+                <div>
+                    <button class="abutton">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal1" class="modal1">
+        <!-- Modal content -->
+        <div class="modal-content-1">
+            <h2 style="margin-bottom: 40px">Select category</h2>
+            <span class="close1">&times;</span>
+            <div class="hehehehe">
+                <div class="one-ex-in">
+                    <div class="expense-button-click">Expense</div>
+                    <div class="income-button-click">Income</div>
+                </div>
+                <div class="two-ex-in">
+                    <div>
+                        <div class="expense-items haha-items">
+                            <div>
+                                <img src="./images/wallet.png" alt="image">
+                                <span>Food</span>
+                            </div>
+                            <div>
+                                <img src="./images/wallet.png" alt="image">
+                                <span>Food</span>
+                            </div><div>
+                                <img src="./images/wallet.png" alt="image">
+                                <span>Food</span>
+                            </div>
+                        </div>
+                        <div class="income-items haha-items">
+                            <div>
+                                <img src="./images/wallet.png" alt="image">
+                                <span>Food</span>
+                            </div>
+                            <div>
+                                <img src="./images/wallet.png" alt="image">
+                                <span>Food</span>
+                            </div><div>
+                                <img src="./images/wallet.png" alt="image">
+                                <span>Food</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="modal-button">
+                <div>
+                    <button class="cbutton close1">Cancle</button>
+                </div>
+                <div>
+                    <button class="abutton">Save</button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+    <div class="container">
+        <nav class="navbar-haha">
+            <div class="ayda">
+                <i class="fa-solid fa-align-justify nav-icon nav-i-hihi"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-burger nav-icon"></i>
+                <p>Ví của tôi</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-sack-dollar nav-icon"></i>
+                <p>Chi tiêu</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-book nav-icon"></i>
+                <p>Tài khoản</p>
+            </div>
+            <div class="logout-nav">
+                <i class="fa-solid fa-gear nav-icon"></i>
+                <p>Đăng xuất</p>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="wallet">
+                <span class="nav-i-mobile"><i class="fa-solid fa-align-justify nav-icon"></i></span>
+                <img id="wallet-img" src="./images/wallet.png" alt="wallet" />
+                <div class="wallet-info">
+                    <p class="wallet-name">Wallet name</p>
+                    <p class="wallet-info-text">2.000.000 VND</p>
+                </div>
+            </div>
+            <div class="categories">
+                <i class="fa-solid fa-magnifying-glass categories-icon"></i>
+                <button class="categories-button" id="myBtn">Add transaction</button>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="main-content-child">
+                <div class="main-content-header">
+                    <div>Last month</div>
+                    <div>This month</div>
+                    <div>Next month</div>
+                </div>
+                <div class="text-content">
+                    <div class="flow">
+                        <p>Inflow</p>
+                        <p class="flow-1-p">10.000.000 VND</p>
+                    </div>
+                    <div class="flow flow-2">
+                        <p>Outflow</p>
+                        <p class="flow-2-p">20.000.000 VND</p>
+                    </div>
+                    <div class="flow-last">
+                        <p>30.000.000 VND</p>
+                    </div>
+                    <div class="view-report">
+                        <a href="#">View report here</a>
+                    </div>
+                    <div class="list-items">
+                        <div class="list-item">
+                            <div>
+                                <div class="div-list-item-image"><img src="./images/wallet.png" alt="image" class="list-item-image"></div>
+                                <div class="list-item-center">
+                                    <div class="list-item-center-h2">Food</div>
+                                    <div class="list-item-center-text">tien sugar baby</div>
+                                </div>
+                            </div>
+                            <div>12.000.000 VND</div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="div-list-item-image"><img src="./images/wallet.png" alt="image" class="list-item-image"></div>
+                                <div class="list-item-center">
+                                    <div class="list-item-center-h2">Food</div>
+                                    <div class="list-item-center-text">tien sugar baby</div>
+                                </div>
+                            </div>
+                            <div>12.000.000 VND</div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="div-list-item-image"><img src="./images/wallet.png" alt="image" class="list-item-image"></div>
+                                <div class="list-item-center">
+                                    <div class="list-item-center-h2">Food</div>
+                                    <div class="list-item-center-text">tien sugar baby</div>
+                                </div>
+                            </div>
+                            <div>12.000.000 VND</div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="div-list-item-image"><img src="./images/wallet.png" alt="image" class="list-item-image"></div>
+                                <div class="list-item-center">
+                                    <div class="list-item-center-h2">Food</div>
+                                    <div class="list-item-center-text">tien sugar baby</div>
+                                </div>
+                            </div>
+                            <div>12.000.000 VND</div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="div-list-item-image"><img src="./images/wallet.png" alt="image" class="list-item-image"></div>
+                                <div class="list-item-center">
+                                    <div class="list-item-center-h2">Food</div>
+                                    <div class="list-item-center-text">tien sugar baby</div>
+                                </div>
+                            </div>
+                            <div>12.000.000 VND</div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="div-list-item-image"><img src="./images/wallet.png" alt="image" class="list-item-image"></div>
+                                <div class="list-item-center">
+                                    <div class="list-item-center-h2">Food</div>
+                                    <div class="list-item-center-text">tien sugar baby</div>
+                                </div>
+                            </div>
+                            <div>12.000.000 VND</div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="div-list-item-image"><img src="./images/wallet.png" alt="image" class="list-item-image"></div>
+                                <div class="list-item-center">
+                                    <div class="list-item-center-h2">Food</div>
+                                    <div class="list-item-center-text">tien sugar baby</div>
+                                </div>
+                            </div>
+                            <div>12.000.000 VND</div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="div-list-item-image"><img src="./images/wallet.png" alt="image" class="list-item-image"></div>
+                                <div class="list-item-center">
+                                    <div class="list-item-center-h2">Food</div>
+                                    <div class="list-item-center-text">tien sugar baby</div>
+                                </div>
+                            </div>
+                            <div>12.000.000 VND</div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="div-list-item-image"><img src="./images/wallet.png" alt="image" class="list-item-image"></div>
+                                <div class="list-item-center">
+                                    <div class="list-item-center-h2">Food</div>
+                                    <div class="list-item-center-text">tien sugar baby</div>
+                                </div>
+                            </div>
+                            <div>12.000.000 VND</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

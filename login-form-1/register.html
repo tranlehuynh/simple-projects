@@ -5,20 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
     <div class="container">
         <div class="login-register-form">
-            <h3>Log in</h3>
+            <h3>Sign up</h3>
             <form action="" class="login-form">
+                <div class="register-form-child-input">
+                    <div>
+                        <input type="text" class="register-form-child-input" required>
+                        <label for="firstName" class="login-form-child-label-1">First Name</label>
+                    </div>
+                    <div>
+                        <input type="text" class="register-form-child-input" required>
+                        <label for="firstName" class="login-form-child-label-1">Last name</label>
+                    </div>
+                </div>
                 <div class="login-form-email login-form-child">
                     <input type="text" class="login-form-child-input" required>
-                    <label for="email" class="login-form-child-label">Your email</label>
+                    <label for="email" class="login-form-child-label">Email</label>
                 </div>
                 <div class="login-form-password login-form-child">
                     <input type="password" class="login-form-child-input" required>
                     <label for="password" class="login-form-child-label">Password</label>
+                </div>
+                <div class="login-form-password login-form-child">
+                    <input type="password" class="login-form-child-input" required>
+                    <label for="password" class="login-form-child-label">Retype password</label>
                 </div>
             </form>
             <p id="forgot-password"><a href="#"><u>Forgot your password?</u></a></p>
@@ -27,10 +41,10 @@
                     <input type="checkbox">
                     <p>Remember me</p>
                 </div>
-                <button>Log in</button>
+                <button>Create account!</button>
             </div>
             <div class="login-black">
-                <p>Don't have any account? <a href="register.html">Create one now</a></p>
+                <p>Already have an account? <a href="index.html">Log in</a></p>
             </div>
         </div>
         <div class="login-register-image">

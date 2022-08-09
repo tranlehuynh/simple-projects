@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar-haha">
+            <div class="ayda">
+                <i class="fa-solid fa-align-justify nav-icon nav-i-hihi"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-burger nav-icon"></i>
+                <p>Ví của tôi</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-sack-dollar nav-icon"></i>
+                <p>Chi tiêu</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-book nav-icon"></i>
+                <p>Tài khoản</p>
+            </div>
+            <div class="logout-nav">
+                <i class="fa-solid fa-gear nav-icon"></i>
+                <p>Đăng xuất</p>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="wallet">
+                <span class="nav-i-mobile"><i class="fa-solid fa-align-justify nav-icon"></i></span>
+                <img id="wallet-img" src="./images/wallet.png" alt="wallet" />
+                <div class="wallet-info">
+                    <p class="wallet-name">Wallet name</p>
+                    <p class="wallet-info-text">2.000.000 VND</p>
+                </div>
+            </div>
+            <!-- <div class="categories">
+                <i class="fa-solid fa-magnifying-glass categories-icon"></i>
+                <button class="categories-button" id="myBtn">Add transaction</button>
+            </div> -->
+        </header>
+        <div class="account-detail">
+            <h1>My Account</h1>
+            <div class="account-detail-main">
+                <div class="account-detail-left">
+                    <div class="content-detail-left">
+                        <h3>User information</h3>
+                        <p>You can change your information in here</p>
+                    </div>
+                    <div class="call-me-1">
+                        <div class="full-name">
+                            <h3>Full name</h3>
+                            <div class="full-name-div">
+                                <div id="bd-input">
+                                    <input class="full-name-div-input" type="text" required>
+                                    <label for="first_name" class="this-label">First name</label>
+                                </div>
+                                <div>
+                                    <input  class="full-name-div-input" type="text" required>
+                                    <label for="last_name" class="this-label">Last name</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address">
+                            <h3>Email</h3>
+                            <div class="address-div">
+                                <input class="address-div-input" type="text" required>
+                                <label for="email" class="address-label-div">Email</label>
+                            </div>
+                        </div>
+                        <div class="address">
+                            <h3>Phone</h3>
+                            <div class="address-div">
+                                <input class="address-div-input" type="text" required>
+                                <label for="number" class="address-label-div">Phone</label>
+                            </div>
+                        </div>
+                        <div class="info-change-button">
+                            <button id="button-super-1">Cancle</button>
+                            <button id="button-super-2">Save</button>
+                        </div>
+                    </div>
+
+                    <div class="content-detail-left oke-let-me">
+                        <h3>Change password</h3>
+                        <p>You can change your password in here</p>
+                    </div>
+                    <div class="call-me-1 call-me-hidden">
+                        <div class="address">
+                            <h3>Password</h3>
+                            <div class="address-div">
+                                <input class="address-div-input" type="text" required>
+                                <label for="email" class="address-label-div">Password</label>
+                            </div>
+                        </div>
+                        <div class="address">
+                            <h3>Change password</h3>
+                            <div class="address-div">
+                                <input class="address-div-input" type="text" required>
+                                <label for="email" class="address-label-div">Retype password</label>
+                            </div>
+                        </div>
+                        <div class="info-change-button">
+                            <button id="button-super-1">Cancle</button>
+                            <button id="button-super-2">Save</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="account-detail-right">
+                    <h3>Profile photo</h3>
+                    <div>
+                        <img src="./images/ao-dai-girl.png" id="user-info-avatar" alt="avatar">
+                    </div>
+                    <button>Choose you photo</button>
+
+                    <div class="change-password">
+                        <h3 id="change-pass-h3">Change password</h3>
+                        <div class="change-password-form">
+                            <input type="text" class="change-password-form-input" required>
+                            <label for="password" class="change-password-form-label">Change password</label>
+                        </div>
+                        <div class="change-password-form">
+                            <input type="text" class="change-password-form-input" required>
+                            <label for="cpass"  class="change-password-form-label">Retype password</label>
+                        </div>
+                        <div class="info-change-button">
+                            <button id="button-super-1">Cancle</button>
+                            <button id="button-super-2">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./my-account.js"></script>
+</body>
+</html>
